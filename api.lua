@@ -1451,7 +1451,7 @@ end
 -- execute current state (stand, walk, run, attacks)
 local do_states = function(self, dtime)
 
-	local yaw = self.object:get_yaw() or 0
+	local yaw = self.object:getyaw() or 0
 
 	if self.state == "stand" then
 
